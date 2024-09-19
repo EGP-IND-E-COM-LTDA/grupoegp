@@ -1,0 +1,113 @@
+header.header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+
+div.leftside {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+div.leftside img {
+    width: 180px;
+    transition: calc(.4s);
+    cursor: pointer;
+}
+div.leftside img:hover {
+    transform: scale(1.025);
+}
+div.leftside h1 {
+    font-size: 48px;
+}
+
+div.midleside {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    font-size: 20px;
+}
+div.midleside div.navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+div.midleside div.navbar a {
+    text-decoration: none;
+    color: gray;
+    transition: calc(.5s);
+}
+div.midleside div.navbar a:hover {
+    color: #48939E;
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+div.midleside div.socialmedia div.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+div.midleside div.socialmedia div.icons p {
+    color: gray;
+}
+div.midleside div.socialmedia a {
+    text-decoration: none;
+    color: gray;
+    transition: calc(.4s);
+}
+div.midleside div.socialmedia a:hover {
+    color: #48939E;
+    font-weight: bolder;
+}
+
+div.rightside {
+    color: white;
+    width: 530px;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #DB0E69;
+}
+div.app  {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+div.app p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+div.app div.googleplay img {
+    width: 45px;
+}
+div.app div.googleplay {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    transition: calc(.4s);
+}
+div.app div.applestore {
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    transition: calc(.4s);
+}
+div.app div.applestore img {
+    width: 55px;
+}
+div.app div.applestore:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+div.app div.googleplay:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
