@@ -1,6 +1,10 @@
 .portifolio {
   height: 1000px;
   margin-top: 50px;
+  @media (max-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .titulo {
   text-align: center;
@@ -13,12 +17,19 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  @media (max-width: 1280px) {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
 }
 #container-produtos-evp{
   display: flex;
   margin-top: 10px;
   flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: 1280px) {
+    
+  }
 }
 #container-pagina-produtos-evp{
   width: 480px;
@@ -26,9 +37,13 @@
   height: 310px;
   border: #babdc6 2px solid;
   box-shadow: #bbbfc6 1px 1px 1px 1px;
-  margin: 10px;
+  margin: 20px;
   background-color: transparent;
   transition: calc(.2s);
+  @media (max-width: 1280px) {
+    width: 370px;
+    margin: 30px;
+  }
 }
 #container-pagina-divs-produtos-evp{
   display: flex;

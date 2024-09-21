@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     border-bottom: #294459 3px solid;
+    @media (max-width: 1280px) {
+      height: 880px;
+    }
 }
 .infos {
   color: white;
@@ -15,6 +18,9 @@
   font-size: 110px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  @media (max-width: 1920px) {
+    font-size: 80px;
+  }
 }
 
 .infos p {
@@ -28,54 +34,66 @@
     align-items: center;
     height: 90%;
     width: 30%;
-  }
+    @media (max-width: 1280px) {
+      margin-left: 320px;
+    }
+}
   
-  .carousel {
-    position: relative;
-    width: 1920px; /* Largura do carousel */
-    overflow: hidden;
+.carousel {
+  position: relative;
+  width: 1920px; /* Largura do carousel */
+  overflow: hidden;
+  @media (max-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
   }
+}
   
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
   
-  .carousel-slide {
-    min-width: 100%; /* Cada slide ocupa toda a largura */
-    box-sizing: border-box;
-    text-align: center;
-  }
+.carousel-slide {
+  min-width: 100%; /* Cada slide ocupa toda a largura */
+  box-sizing: border-box;
+  text-align: center;
+}
   
-  .carousel-slide img {
-    width: 430px;
-    height: 390px;
-    margin-bottom: 10px;
+.carousel-slide img {
+  width: 430px;
+  height: 390px;
+  margin-bottom: 10px;
+  @media (max-width: 1280px) {
+    width: 300px;
+    height: 300px;
   }
+}
   
-  /* Botões de navegação */
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #294459;
-    color: white;
-    border: none;
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 2;
-    border-radius: 50%;
-  }
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #294459;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
   
   .carousel-button.prev {
     left: 10px;
     background-color: transparent;
+    z-index: -1;
   }
   
   .carousel-button.next {
     right: 10px;
     background-color:transparent;
+    z-index: -1;
   }
 
   .botoes {
@@ -89,7 +107,7 @@
     background-color: #DB0E69;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 22px;
     padding: 10px 20px;
     cursor: pointer;
     transition: calc(.4s);
@@ -131,7 +149,7 @@ a {
     color: white;
     display: flex;
     align-items: center;
-    font-size: 23px;
+    font-size: 24px;
     padding: 5px 10px;
     cursor: pointer;
     transition: calc(.4s);
