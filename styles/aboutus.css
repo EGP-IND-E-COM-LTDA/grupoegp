@@ -2,8 +2,8 @@
 .background {
     width: auto;
     border: 1px solid transparent;
-    height: 800px;
-    background-color: #5B9FC9;
+    height: 820px;
+    background-color: #283C55;
 }
 
 .flexbox {
@@ -13,10 +13,13 @@
     width: 1500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.76);
     justify-content: space-around;
     align-items: center;
     height: 700px;
+    @media (max-width: 1280px) {
+        width: 1300px;
+    }
 }
 .box-paises {
     width: 900px;
@@ -25,6 +28,10 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    @media (max-width: 1280px) {
+        width: 700px;
+        height: 560px;
+    }
 }
 .box-paises h2 {
     margin-bottom: 50px;
@@ -46,10 +53,26 @@
     align-items: center;
     gap: 80px;
     justify-content: center;
+    @media (max-width: 1280px) {
+        gap: 50px;
+    }
 }
 .country {
     flex: 2 2 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin-top: -15px;
+    @media (max-width: 1280px) {
+        margin-top: 0;
+    }
 }
 .country img {
     width: 100px;
+    background-color: #283C55;
+    border-radius: 50%;
+    @media (max-width: 1280px) {
+        width: 80px;
+    }
 }
